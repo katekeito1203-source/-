@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>緊急アレルギー情報カード</title>
+    <meta http-equiv="refresh" content="0; url=card.html?static=1">
+</head>
+<body>
+    <p><a href="card.html?static=1">緊急アレルギー情報カードを開く</a></p>
+    <script>
+        const params = new URLSearchParams(location.search);
+        params.set('static', '1');
+        location.replace('card.html?' + params.toString() + location.hash);
+    </script>
+</body>
+</html>
